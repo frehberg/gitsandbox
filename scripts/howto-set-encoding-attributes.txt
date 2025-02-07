@@ -1,0 +1,10 @@
+
+# see all encodings
+iconv -l
+
+# pick the correct encoding and set .gitattributes as follows
+
+#
+echo '*.html encoding=utf-8' >> .gitattributes
+echo '*.c encoding=cp1252' >> .gitattributes
+
