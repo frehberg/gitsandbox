@@ -1,0 +1,25 @@
+gitGraph
+    commit id: "initial"
+    commit tag: "v1.0.0"
+    branch "integration/rel1"
+    branch "features/feat1"
+    checkout integration/rel1
+    commit
+    commit id:"fix"
+    commit
+    checkout features/feat1
+    commit
+    commit
+    commit
+    checkout integration/rel1
+    merge features/feat1
+    checkout main
+    cherry-pick id: "fix"
+    checkout integration/rel1
+    checkout main
+    merge integration/rel1
+    commit tag: "rel2.0"
+
+
+
+

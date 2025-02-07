@@ -1,0 +1,31 @@
+gitGraph
+    commit id: "initial"
+    commit tag: "v1.0.0"
+    branch "release-v2"
+    branch "feat-2.1"
+    commit
+    commit
+    checkout release-v2
+    merge feat-2.1
+    commit tag: "v2.0"
+    branch feat-2.2
+    commit
+    checkout release-v2
+    merge  feat-2.2
+    commit tag: "v2.1"
+    checkout main
+    merge release-v2
+    branch release-v3
+    checkout release-v3
+    branch feat-3.1
+    commit
+    commit id: "fix"
+    checkout release-v3
+    merge feat-3.1
+    commit tag: "v3.0"
+    checkout main
+    merge release-v3
+    checkout release-v2
+    cherry-pick id: "fix"
+    commit tag: "v2.3"
+
